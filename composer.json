@@ -1,0 +1,7 @@
+{
+    "name": "webtourismus/choicesjs",
+    "description": "Mirror of https://www.npmjs.com/package/choices.js as drupal-library",
+    "license": "MIT",
+    "type": "drupal-library",
+    "homepage": "https://choices-js.github.io/Choices/"
+}
