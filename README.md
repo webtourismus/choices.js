@@ -151,6 +151,8 @@ Or include Choices directly:
     noResultsText: 'No results found',
     noChoicesText: 'No choices to choose from',
     itemSelectText: 'Press to select',
+    uniqueItemText: 'Only unique values can be added',
+    customAddItemText: 'Only values matching specific conditions can be added',
     addItemText: (value) => {
       return `Press Enter to add <b>"${value}"</b>`;
     },
@@ -342,7 +344,7 @@ Pass an array of objects:
 
 **Usage:** Whether HTML should be rendered in all Choices elements. If `false`, all elements (placeholder, items, etc.) will be treated as plain text. If `true`, this can be used to perform XSS scripting attacks if you load choices from a remote source.
 
-**Deprecation Warning:** This will default to `false` in a future release. 
+**Deprecation Warning:** This will default to `false` in a future release.
 
 ### duplicateItemsAllowed
 
@@ -615,7 +617,7 @@ const example = new Choices(element, {
 
 **Input types affected:** `select-one`, `select-multiple`
 
-**Usage:** The labelId improves accessibility. If set, it will add aria-labeledby to the choices element.
+**Usage:** The labelId improves accessibility. If set, it will add aria-labelledby to the choices element.
 
 ### classNames
 
